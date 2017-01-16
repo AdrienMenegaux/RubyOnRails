@@ -1,5 +1,7 @@
-class ArticlesController < ApplicationController
-  def index
-    @artciles = Article.all
+class ArticlesController < ApplicationController # ArticlesController: Au pluriel parce qu'il gère plusieurs aticles.
+
+  def index #Action: Index
+    @articles = Article.all
   end
+
 end
