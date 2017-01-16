@@ -3,7 +3,7 @@ class CreateChapters < ActiveRecord::Migration[5.0]
     create_table :chapters do |t|
       t.text :title
       t.text :content
-      t.integer :chapter_id
+      t.integer :parent_id
       t.string :lang
       t.datetime :published_at
 
