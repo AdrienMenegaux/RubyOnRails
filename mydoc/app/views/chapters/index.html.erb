@@ -1,4 +1,4 @@
-<!-- <div class="wrapper">
+<div class="wrapper">
   <div class="wrapper__header">
     <nav>
       <ul>
@@ -9,18 +9,17 @@
       </ul>
     </nav>
     <div class="wrapper__container">
-      <tab class="articles">
+      <tab class="chapters">
+        <!-- Method 1
+        <% @chapters.each do |chapter|%>
         <tr>
-          <td>#</td>
-          <td>content</td>
+          <td><%= chapter.title[0..255]%></td>
+          <br>
         </tr>
-        <% @articles.each do |article|%>
-        <tr>
-          <td><%= article.id %></td>
-          <td><%= article.content[0..255]%></td>
-        </tr>
-        <% end %>
+        <% end %> -->
+        <!-- Method 2 -->
+        <tr><%= render @chapters%></tr>
       </tab>
     </div>
   </div>
-</div> -->
+</div>

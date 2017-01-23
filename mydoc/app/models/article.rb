@@ -1,3 +1,3 @@
 class Article < ApplicationRecord
-  belongs_to :under
+  belongs_to :chapter
 end

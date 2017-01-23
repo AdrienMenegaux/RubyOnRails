@@ -1,5 +1,5 @@
 class ChaptersController < ApplicationController
   def index #Action: Index
-    @chapters = Chapter.all
+    @chapters = Chapter.parents_only
   end
 end

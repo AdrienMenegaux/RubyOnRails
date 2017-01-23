@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 20170116094127) do
 
   create_table "chapters", force: :cascade do |t|
     t.text     "title"
-    t.text     "content"
     t.integer  "parent_id"
     t.string   "lang"
     t.datetime "published_at"
