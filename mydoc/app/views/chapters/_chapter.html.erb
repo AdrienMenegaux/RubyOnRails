@@ -1,0 +1,7 @@
+<h1><%= chapter.title %></h1>
+<tr>
+  <td><%= chapter.id %></td>
+  <td><a href="chapters/<%= chapter.id%>"><%= chapter.title %></a></td>
+  <td><%= format_date(chapter.published_at) %> - <%= time_ago_in_words(chapter.published_at) %></td>
+</tr>
+<%= render partial: "sub_chapter", collection: chapter.children, as: :chapter %>
